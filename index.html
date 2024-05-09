@@ -6,9 +6,9 @@
   <style>
     .container{
       display: grid;
-      width: 800px; /*limita tamanho da largura e cola as divs*/
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*como são 8 colunas são 8x 1fr que intercala entre div preta e div branca*/
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*como são 8 linhas são 8x 1fr que intercala entre div preta e div branca*/
+      width: 800px; /*limita tamanho da largura para não deixar a responsividade separar as colunas*/
+      grid-template-columns: repeat(8, 1fr); /*como são 8 colunas são 8x 1fr que intercala entre div preta e div branca*/
+      grid-template-rows: repeat(8, 1fr); /*como são 8 linhas são 8x 1fr que intercala entre div preta e div branca*/
     }
     .white{
       height: 100px;
